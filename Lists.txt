@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    N = int(input())
+    commands = []
+    for _ in range(N):
+        line = input().split()
+        val = list(line)
+        commands.append(val)
+        
+    exec_commands = []
+    cont = 0
+    for i in commands:
+        if i[cont] == "insert":
+            exec_commands.insert(int(i[cont+1]),int(i[cont+2]))
+        elif i[cont] == "print":
+            print(exec_commands)
+        elif i[cont] == "remove":
+            exec_commands.remove(int(i[cont+1]))
+        elif i[cont] == "append":
+            exec_commands.append(int(i[cont+1]))
+        elif i[cont] == "sort":
+            exec_commands.sort()
+        elif i[cont] == "pop":
+            exec_commands.pop()
+        elif i[cont] == "reverse":
+            exec_commands.reverse()

@@ -1,0 +1,16 @@
+def is_leap(year):
+    leap = False
+    
+    prueba1 = year % 4
+    prueba2 = year % 100
+    prueba3 = year % 400
+    
+    if(prueba1 == 0 and prueba2 != 0):
+        leap = True
+    if(prueba1 == 0 and prueba3 == 0):
+        leap = True
+    if(prueba2 != 0 and prueba3 == 0):
+        leap = True
+        
+        
+    return leap

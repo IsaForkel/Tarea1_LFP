@@ -1,0 +1,7 @@
+if __name__ == '__main__':
+    n = int(raw_input())
+    valor = 0
+    for i in range(n):
+        valor2 = valor * valor
+        print valor2
+        valor = valor + 1

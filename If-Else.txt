@@ -1,0 +1,30 @@
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(raw_input().strip())
+    if(n>=2 and n<=5):
+        var1 = n%2
+        if(var1 != 0):
+            print("Weird")
+        else:
+            print("Not Weird")
+    
+    if(n>=6 and n<=20):
+        var2 = n%2
+        if(var2!=0):
+            print("Not Weird")
+        else:
+            print("Weird")
+            
+    if(n>20):
+        var3 = n%2
+        if(var3!=0):
+            print("Weird")
+        else:
+            print("Not Weird")

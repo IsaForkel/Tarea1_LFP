@@ -1,0 +1,18 @@
+def minion_game(string):
+    vocals = ['A','E','I','O','U']
+    cons = 0
+    voc = 0
+
+    for i in range(len(string)):
+        if not string[i] in vocals:
+            cons += len(string)-i
+        else:
+            voc += len(string)-i
+        #print(cons, voc)
+    
+    if cons > voc:
+        print('Stuart', cons)
+    elif cons < voc:
+        print('Kevin', voc)
+    else:
+        print('Draw')

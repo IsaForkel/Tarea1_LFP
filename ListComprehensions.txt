@@ -1,0 +1,14 @@
+def main():
+    ll = []
+    l = [int(input()) for i in range( 0, 3 )]
+    m = int(input())
+    for i in range(0, l[0] + 1):
+        for j in range(0, l[1] + 1):
+            for k in range(0, l[2] + 1):
+                t = [i,j,k]
+                if sum(t) != m:
+                    ll.append(t)
+
+    print( ll )
+
+main()
